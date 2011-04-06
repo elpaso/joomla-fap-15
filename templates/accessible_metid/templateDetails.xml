@@ -2,8 +2,8 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
 <install version="1.5" type="template">
 	<name>accessible_metid</name>
-	<version>108 SVN</version>
-    <creationDate>2010-01-22</creationDate>
+	<version>2.0</version>
+    <creationDate>2011-04-06</creationDate>
     <author>Centro Metid - Politecnico di Milano</author>
     <authorEmail>pso.assistenza@polimi.it</authorEmail>
     <authorUrl>http://www.metid.polimi.it/</authorUrl>
