@@ -1,0 +1,354 @@
+/** Fonts, sizes and minor blocks settings */
+body {
+    font-size: 76%;
+    font-family:Trebuchet MS,Verdana,Helvetica,Arial,san-serif;
+    line-height: 1.4;
+}
+
+address,blockquote,form,ul,ol,dl{
+    margin: 0.3em 1em;
+}
+
+label {
+    margin: 0.3em 0.3em 0.3em 0;
+}
+
+#emailForm label {
+    padding-left: 1em;
+}
+
+.moduletable ul.menu
+, .moduletable ul.menu ul
+, .moduletable {
+    padding: 0;
+    line-height: 1.7em;
+}
+
+.moduletable {
+    margin-bottom: 1em;
+}
+
+.moduletable ul.menu li, .moduletable-footer li {
+    list-style-type: none;
+}
+
+.moduletable-footer li {
+	display: inline;
+	padding: 1em;
+	font-weight: bold;
+}
+
+.moduletable_menu h3, .moduletable h3{
+	font-size:110%;
+	font-weight:bold;
+    padding:0.5em 0 0.5em 0.5em;
+	margin: 0;
+}
+
+.moduletable p {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.menu a
+, .mostread a
+, .latestnews a{
+    display: block;
+    text-decoration:none;
+    padding:0.5em 0 0.5em 0.5em;
+    margin: 1px 0;
+    font-size: 110%;
+    font-weight: bolder;
+    border-bottom: dotted 1px gray;
+}
+
+a.contentpagetitle {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Footer */
+
+div#footer{
+	clear:both;
+	height:46px;
+	margin-top:3px;
+	padding:5px 0pt;
+	text-align:center;
+}
+
+div#footer .padding{
+    padding: 0;
+    margin-top: 2em;
+}
+
+div#footer div.moduletable-footer{
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+/** Images */
+.banneritem img {
+    vertical-align: bottom;
+}
+
+.blog img {
+    margin: 0.5em;
+    overflow: hidden;
+}
+
+.buttonheading img,
+.blog a img  {
+    border: none;
+    margin: 0;
+}
+
+div.blog_more {
+    clear: both;
+}
+
+.blog_more li, .latestnews li, .mostread li{
+    list-style-type: none;
+}
+
+div#accessibility-links input{
+    border: solid 1px gray;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+div#accessibility-links input:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+div#accessibility-links span.accessibility-icon input{
+    border: 0 none;
+    height: 17px;
+    width: 17px;
+    margin-left: 0;
+    font-size:10px;
+    vertical-align: top;
+}
+
+div#accessibility-links span.accessibility-icon {
+    height: 17px;
+    margin: 0 0 0 2px;
+    padding: 1px;
+    width: 17px;
+    float: left;
+}
+
+div#accessibility-links span.accessibility-text {
+    float: left;
+    margin: 0 0.1em 0 0.5em;
+}
+
+
+span.accessibility-icon #increase { background-image: url('../images/textincrease.gif'); }
+span.accessibility-icon #decrease { background-image: url('../images/textdecrease.gif'); }
+span.accessibility-icon #reset { background-image: url('../images/textreset.gif'); }
+span.accessibility-icon #contrasthigh { background-image: url('../images/contrasthigh.gif'); }
+span.accessibility-icon #contrastnormal { background-image: url('../images/contrastnormal.gif'); }
+span.accessibility-icon #layouttext { background-image: url('../images/layout.gif'); }
+span.accessibility-icon #layoutnormal { background-image: url('../images/layoutnormal.gif'); }
+
+
+.author, .createdate, .modifydate {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Search */
+#mod_search_searchword {
+    width: 140px;
+    font-size:inherit;
+}
+
+div.pageslinks {
+	text-align: center;
+	margin-top: 1em;
+	padding: 0.25em;
+	clear: both;
+        font-weight: bold;
+}
+
+div.pagescounter {
+	text-align: center;
+	margin-bottom: 1em;
+	padding: 0.25em;
+        clear: both;
+        font-weight: bold;
+}
+
+div.searchresult {
+	margin-bottom: 1em;
+}
+
+
+form#searchForm, form#searchForm label,  form#searchForm input {
+	margin: 0;
+}
+
+form#searchForm div {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+div.contentpaneopen ul, div.contentpaneopen ul {
+    margin: 1.5em;
+}
+
+ul.menu
+, ul.mostread
+, ul.latestnews {
+	padding: 0;
+	margin:0;
+}
+
+
+/* Top */
+#top {
+	border-bottom:1px solid #CCCCCC;
+	height:42px;
+/*	margin:8px 2px 1px;
+	padding-bottom:2px;*/
+}
+
+
+div#menu-top .moduletable {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+
+div#menu-top .padding, div#footer .padding{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+div#menu-top a {
+    font-weight: bold;
+    text-decoration:none;
+}
+
+div#menu-top a {
+	padding: 0.25em 1em;
+}
+
+
+ul.menu-nav li {
+    list-style-type: none;
+    display: inline;
+}
+
+ul.menu-nav {
+	margin:0;
+	padding: 0.25em;
+}
+
+/** Banner */
+#banner .moduletable {
+	margin-bottom: 4px;
+}
+
+/** Titles and so */
+.contentheading h1 {
+	font-weight:bold;
+	margin:5px 0pt;
+	padding:0px 0px 5px;
+}
+
+div.buttonheading {
+	margin-bottom: 1em;
+}
+
+a.readon {
+	padding: 0.3em;
+	padding-left: 0;
+}
+
+div.column_separator .yvComment {
+	padding-left:4%;
+	margin-bottom: 1em;
+}
+
+div.poll div {
+	padding: 0.2em 1em;
+}
+
+#pollform {
+	margin:1px 0;
+}
+
+/* Forms */
+
+fieldset {
+	padding: 1em;
+	border: solid 2px gray;
+}
+
+legend {
+	padding: 1em;
+	font-weight: bold;
+}
+
+a img {
+	border: none;
+}
+
+/* Content tables */
+.contentpane table td
+,.contentpane table th
+{
+	padding: 0.25em;
+}
+
+/* Link view*/
+a.category {
+    font-weight: bold;
+}
+
+span.description {
+    margin-left: 1em;
+}
+/* Fix poll fieldset */
+.poll fieldset {
+    border: none;
+    margin:0;
+    padding:0;
+}
+
+/* Page navigation */
+div.pagenav {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	padding: 0.75em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* The ugly fix */
+legend.poll-title {
+    display:none;
+}
+
+hr.clear {
+    clear:both;
+    height: 0;
+    visibility:hidden;
+}

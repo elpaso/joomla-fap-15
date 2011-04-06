@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+	<name>AccessKeys</name>
+	<creationDate>2011-01-31</creationDate>
+	<author>Alessandro Pasotti</author>
+	<authorUrl>http://www.itopen.it</authorUrl>
+	<copyright>Copyright 2008 ItOpen</copyright>
+	<license>GNU/AGPL</license>
+	<version>15 SVN</version>
+	<description>
+	<![CDATA[
+             Componente per le accesskey
+    ]]>
+	</description>
+
+    <installfile>install.accesskeys.php</installfile>
+
+	<!--install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install-->
+
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<files folder="site">
+	</files>
+
+	<languages>
+	</languages>
+
+	<administration>
+		<menu>Access Keys</menu>
+			<files folder="admin">
+			<filename>admin.accesskeys.php</filename>
+			<filename>controller.php</filename>
+			<filename>controllers/accesskeys.php</filename>
+			<filename>tables/accesskeys.php</filename>
+			<filename>views/accesskeys/view.html.php</filename>
+			<filename>views/accesskeys/tmpl/default.php</filename>
+			<filename>models/accesskeys.php</filename>
+			<filename>helpers/accesskeys.php</filename>
+			<!--filename>install.sql</filename-->
+			<filename>uninstall.sql</filename>
+		</files>
+
+		<languages>
+			<language tag="it-IT">languages/admin/it-IT.com_accesskeys.ini</language>
+		</languages>
+
+	</administration>
+</install>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>accessible_metid</name>
+	<version>108 SVN</version>
+    <creationDate>2010-01-22</creationDate>
+    <author>Centro Metid - Politecnico di Milano</author>
+    <authorEmail>pso.assistenza@polimi.it</authorEmail>
+    <authorUrl>http://www.metid.polimi.it/</authorUrl>
+    <copyright>Copyright 2010 | Centro Metid - Politecnico di Milano</copyright>
+    <license>AGPL: Affero GPL</license>
+    <description>Accessible Template XHTML Strict - By METID</description>
+	<files>
+		<filename>params.ini</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>js/skin_alter.js</filename>
+		<filename>html/com_search/search/default.php</filename>
+		<filename>html/com_search/search/default_form.php</filename>
+		<filename>html/com_search/search/default_results.php</filename>
+		<filename>html/mod_poll/default.php</filename>
+		<filename>html/mod_newsflash/_item.php</filename>
+		<filename>html/com_contact/category/default_items.php</filename>
+		<filename>html/com_contact/category/default.php</filename>
+		<filename>html/com_contact/contact/default_address.php</filename>
+		<filename>html/com_contact/contact/default.php</filename>
+		<filename>html/com_contact/contact/default_form.php</filename>
+		<filename>html/mod_whosonline/default.php</filename>
+		<filename>html/mod_random_image/default.php</filename>
+		<filename>html/mod_search/default.php</filename>
+		<filename>html/com_content/category/default_items.php</filename>
+		<filename>html/com_content/category/blog_item.php</filename>
+		<filename>html/com_content/category/default.php</filename>
+		<filename>html/com_content/category/blog.php</filename>
+		<filename>html/com_content/section/blog_item.php</filename>
+		<filename>html/com_content/section/default.php</filename>
+		<filename>html/com_content/section/blog.php</filename>
+		<filename>html/com_content/article/form.php</filename>
+		<filename>html/com_content/article/default.php</filename>
+		<filename>html/com_content/overrides/default_item.php</filename>
+		<filename>html/com_content/overrides/blog_item.php</filename>
+		<filename>html/com_content/overrides/blog.php</filename>
+		<filename>html/com_content/frontpage/default_item.php</filename>
+		<filename>html/com_content/frontpage/default.php</filename>
+		<filename>html/mod_mainmenu/accesskey_helper.php</filename>
+		<filename>html/mod_mainmenu/default.php</filename>
+		<filename>html/com_user/login/index.html</filename>
+		<filename>html/com_user/login/default_login.php</filename>
+		<filename>html/com_user/login/default.php</filename>
+		<filename>html/com_user/login/default_logout.php</filename>
+		<filename>html/com_user/index.html</filename>
+		<filename>html/com_user/register/index.html</filename>
+		<filename>html/com_user/register/default_message.php</filename>
+		<filename>html/com_user/register/default.php</filename>
+		<filename>html/com_user/user/index.html</filename>
+		<filename>html/com_user/user/form.php</filename>
+		<filename>html/com_user/user/default.php</filename>
+		<filename>html/com_user/reset/index.html</filename>
+		<filename>html/com_user/reset/complete.php</filename>
+		<filename>html/com_user/reset/confirm.php</filename>
+		<filename>html/com_user/reset/default.php</filename>
+		<filename>html/com_user/remind/index.html</filename>
+		<filename>html/com_user/remind/default_message.php</filename>
+		<filename>html/com_user/remind/default.php</filename>
+		<filename>html/mod_login/default.php</filename>
+		<filename>html/mod_banners/xhtml_helper.php</filename>
+		<filename>html/mod_banners/default.php</filename>
+		<filename>css/typography.css</filename>
+        <filename>css/general.css</filename>
+		<filename>css/index.html</filename>
+		<filename>css/editor_content.css</filename>
+		<filename>css/template_css.css</filename>
+		<filename>css/msie6.css</filename>
+		<filename>css/layout.css</filename>
+		<filename>css/skin_black.css</filename>
+		<filename>css/skin_white.css</filename>
+		<filename>images/index.html</filename>
+		<filename>images/emailButton.png</filename>
+        <filename>images/icon-error.gif</filename>
+		<filename>images/pdf_button.png</filename>
+		<filename>images/spacer.png</filename>
+		<filename>images/printButton.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>index.php</filename>
+		<filename>joomla_fap_tpl_positions.png</filename>
+		<filename>joomla_accessible_template.png</filename>
+    </files>
+    <params>
+            <param name="default_skin" type="radio" default="white" label="Choose default skin">
+                <option value="white">White (Default)</option>
+                <option value="black">Black (High Contrast)</option>
+            </param>
+    </params>
+	<languages>
+        <language tag="it-IT">it-IT.tpl_accessible_metid.ini</language>
+	</languages>
+	<administration>
+		<languages folder="admin">
+		</languages>
+	</administration>
+	<positions>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>bottom</position>
+		<position>footer</position>
+		<position>breadcrumb</position>
+		<position>banner</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>debug</position>
+		<position>syndicate</position>
+	</positions>
+
+</install>

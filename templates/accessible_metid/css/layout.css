@@ -1,0 +1,168 @@
+/** Main blocks and floats */
+
+body#mainbody {
+    text-align: center;
+    margin: 0;
+    /* to avoid margins */
+    min-height:100%;
+  }
+
+
+body div#wrapper {
+    width: auto !important;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: left;
+
+  }
+
+ul{
+list-style-type: none;
+}
+
+ul#mainlevel-nav li {display: inline;}
+ul#mainlevel-nav  {height:18px;margin-left:auto;margin-right:auto;text-align:right;padding-top:2px;}
+
+#menu-top .moduletable {
+padding-bottom:1px;
+padding-top:1px;
+margin-right:0
+}
+
+
+div#sidebar-left .moduletable_menu h3, 
+div#sidebar-left .moduletable h3 {
+  padding-top:5px
+
+}
+.hidden {
+    font-size:0.1em;
+    height:1px;
+    line-height:0.1em;
+    margin:0pt;
+    padding:0pt;
+    position:absolute;
+    top:-10000px;
+    width:1px;
+  }
+
+.clr {
+    clear: both;
+  }
+
+div.padding {
+    padding: 0.5em;
+  }
+
+
+div#sidebar-left {
+    float: left;
+    width: 190px;
+
+    overflow: hidden;
+  }
+
+div#sidebar-left div.padding {
+    padding-left: 8px;
+  }
+
+
+div#sidebar-right div.padding {
+    padding-right: 0;
+  }
+
+
+div#menu-top div.padding {
+    padding-left: 0;
+  }
+
+
+div#sidebar-right {
+    float: right;
+    width: 190px;
+    overflow: hidden;
+    padding-right: 12px;
+    margin-top:0;
+  }
+
+
+div#main-1 {
+    overflow:hidden;
+    width:100%;
+  }
+
+
+div#main-2 {
+    float:left;
+    height:100%;
+    width:75%;
+    padding-left:5px;
+     }
+
+div#main-2  .padding {padding-right:0 ; text-align: justify;}
+
+div#main-3 {
+    float: left;
+    width: 65%;
+    overflow: hidden;
+
+  }
+
+
+div#user12
+, div.userfull {
+    float: left;
+    width: 100%;
+  }
+
+div.column_left {
+    float: left;
+    width: 49%;
+  }
+
+div.column_right {
+    float: right;
+    width: 49%;
+  }
+
+
+div#accessibility-links {
+    text-align:right;
+    padding-top:8px;
+    padding-right:5px;
+  }
+
+div#accessibility-links #decrease{ margin-left:5px
+}
+
+
+div#menu-top {
+    width: 100%;
+  }
+
+div#banner .padding {
+    padding:0;
+    text-align:center;
+  }
+
+
+div.article_column {
+    float: left;
+    overflow: hidden;
+  }
+
+
+div.column_separator .contentpaneopen {
+    padding-left:4%;
+  }
+
+
+div.blog {
+    width: 100%;
+  }
+
+iframe {
+	text-align:left;
+}

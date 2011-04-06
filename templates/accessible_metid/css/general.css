@@ -1,0 +1,86 @@
+label.invalid {
+    background-image : url(../images/icon-error.gif);
+    background-position : left center;
+    background-repeat : no-repeat;
+    color : #ff0000;
+    background-color: #ffffff;
+  }
+
+
+#system-message dt {
+    font-weight: bold;
+  }
+
+
+#system-message dd {
+    margin: 0;
+    font-weight: bold;
+    text-indent: 10px;
+    background:#fff;
+    padding:0;
+    color: #003366;
+  }
+
+
+#system-message dd ul {
+    background-color: #800080;
+    color: #fff;
+    margin-bottom:0px;
+    list-style: none;
+    padding: 0px;
+    border-top: 3px solid #93246F;
+    border-bottom: 3px solid #93246F;
+  }
+
+/* System Standard Messages */
+
+#system-message dt.message {
+    display: none;
+  }
+
+
+#system-message dd.message {
+  }
+
+
+#system-message dd.message ul {
+    background: #600060;
+    color: #f00;
+  }
+
+/* System Error Messages */
+
+#system-message dt.error {
+    display: none;
+  }
+
+
+#system-message dd.error {
+  }
+
+
+#system-message dd.error ul {
+    color: #fff;
+    background-color:#036;
+    border-top: 1px solid #f00;
+    border-bottom: 1px solid #F00;
+    margin:0;
+  }
+
+/* System Notice Messages */
+
+#system-message dt.notice {
+    display: none;
+  }
+
+
+#system-message dd.notice {
+  }
+
+
+#system-message dd.notice ul {
+    color: #fff;
+    background-color:#036;
+    border-top: 1px solid #f00;
+    border-bottom: 1px solid #F00;
+  }

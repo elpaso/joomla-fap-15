@@ -1,0 +1,85 @@
+Per installare Joomla FAP 1.5:
+
+1 - scaricare e installare il template accessible_tpl_xx.zip
+2 - scaricare e installare il componente per le acesskeys com_accesskeys_xx.zip
+3 - scaricare e applicare le ultime patch al core
+
+potete usare il comando patch oppure sovrascrivere con i file .php presenti nella cartella corepatches i rispettivi files della vostra installazione di Joomla 1.5 creando prima un backup di tutti i file sovrascritti.
+
+Plugin fortemente consigliati:
+
+http://develop.joomlashow.it/english/plugins/html-purifier.html
+
+
+Istruzioni di installazione preparate da Antonello (handycam)
+--------------------------------------------------------------
+
+Salve, scrivo questa procedura riportando passo passo le operazioni che ho eseguito durante un'installazione di joomlafap su base joomla 1.5.4, il tutto per testarne le funzionalità e non ai fini dello sviluppo. Non mi addentrerò a spiegare come settare la gestione degli errori di php, ne su come si esegue un checkout o un revert con un client SVN, e neppure come si installano template, componenti, moduli e plugin in joomla, dando per scontato che chi legga sappia come fare. Installazione in locale su window xp professional sp3.
+
+passo1:
+procurarsi una suite che installi Apache/php/mysql, io uso
+XAMPP http://www.apachefriends.org/en/xampp.html
+ma ce ne sono varie, ad esempio
+easyphp http://www.easyphp.org/index.php
+
+passo 2:
+scaricare ed installare joomla
+http://download.joomla.it/index.php?option=com_docman&task=doc_download&gid=646&&Itemid=2
+
+passo 3:
+scaricare il componente accesskey
+http://joomlacode.org/gf/download/frsrelease/7243/24746/com_accesskeys_31.zip
+il template accessibile
+http://joomlacode.org/gf/download/frsrelease/7560/26733/tpl_accessible_57.zip
+e il plugin htmlpurifier
+http://develop.joomlashow.it/english/plugins/html-purifier.html
+
+*da notare che i nomi dei files relativi ad accesskey e template finiscono con un numero che
+sta ad indicare la revisione, rispettivamente 31 e 57, al momento della crezione del pacchetto
+di installazione. Le revisioni attuali presenti nel repository (SVN) sono rispetivamente 66 e 68,
+http://joomlacode.org/gf/project/joomlafap1_5/scmsvn/
+Quindi, se volete allineare il componente e il template all'ultima revisione disponibile nel
+repository, dovete sostituire quei files locali con quelli che nel repository sono stati modificati
+successivamente alla creazione del pacchetto di installazione (zip).
+Per farlo avete diversi modi, il più semplice è quello di installare un client SVN tipo TortoiseSVN,
+http://tortoisesvn.net/
+dando per scontato che sappiate cosa sia e che sappiate usarlo proseguo con la guida*
+
+passo 4:
+decomprimere il pacchetto com_accesskeys_31.zip in una nuova cartella locale com_accesskeys_66, tramite TortoiseSVN eseguire un checkout dalla cartella remota http://joomlacode.org/svn/joomlafap1_5/components/com_accesskeys
+alla cartella locale com_accesskeys_66 appena creata, sempre tramite TortoiseSVN eseguite un revert. Se volete che nel pannello di amministrazione sia riportata la revisione attuale dovete editare il file accesskeys.xml presente nella cartella locale com_accesskeys_66, precisamente il campo <version>. A questo punto create il file com_accesskeys_66.zip con il "contenuto" della cartella com_accesskeys_66 e installate il pacchetto zip appena creato.
+
+passo 5:
+decomprimere il pacchetto tpl_accessible_57.zip in una nuova cartella locale tpl_accessible_68, tramite TortoiseSVN eseguire un checkout dalla cartella remota http://joomlacode.org/svn/joomlafap1_5/templates/accessible
+alla cartella locale tpl_accessible_68 appena creata, sempre tramite TortoiseSVN eseguite un revert. Se volete che nel pannello di amministrazione sia riportata la revisione attuale dovete editare il file templateDetails.xml presente nella cartella locale tpl_accessible_68, precisamente il campo <version>. A questo punto create il file tpl_accessible_68.zip con il "contenuto" della cartella tpl_accessible_68 e installate il pacchetto zip appena creato.
+
+passo 6:
+installare il plugin htmlpurifier.
+
+passo 7:
+per i files corepatches creare un nuova cartella locale corepatches, tramite TortoiseSVN
+eseguire un checkout dalla cartella remota http://joomlacode.org/svn/joomlafap1_5/corepatches
+alla cartellla corepatches locale appena creata.
+sovrascrivere i seguienti files della vostra installazione locale di joomla con quelli presenti
+nella cartella locale corepatches:
+
+root joomlafap\plugins\system\legacy\adminmenus.php
+root joomlafap\libraries\joomla\html\html\email.php
+root joomlafap\plugins\system\legacy\html.php
+
+solo versione joomla 1.5.3 e precedenti dato che nella versione 1.5.4 sembra essere
+stato corretto il bug della mancata chiusura del tag TD
+root joomlafap\modules\mod_mainmenu\legacy.php
+
+anche questo solo versione joomla 1.5.3 e precedenti dato che nella versione 1.5.4
+sembra essere stato rimosso l'attributo align deprecato
+root joomlafap\plugins\content\pagebreak.php
+
+root joomlafap\plugins\editors\tinymce.php
+
+seguendo questi passi la mia installazione locale di joomlafap su base joomla 1.5.4 sembra funzionare senza problemi. Prendete il tutto con il beneficio del dubbio dato che non sono espertissimo, inotre se gli amministratori del progetto trovano degli strafalcioni sono pregati di segnalarlo cosi correggo il post.
+
+Ciao, Antonello.
+
+-----------------------------------------------------
+

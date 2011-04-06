@@ -1,0 +1,147 @@
+/** Define general colors */
+body.black {
+    background: #333;
+    color: yellow;
+}
+
+body.black h1,body.black h2{
+    color:yellow;
+    border-bottom: solid 1px yellow;
+}
+
+/** Block styles */
+body.black div#wrapper {
+    background: black;
+    margin:0;
+}
+
+body.black div#menu-top a {
+    color: black;
+}
+
+body.black div#menu-top
+, body.black div#footer .padding
+, body.black div#banner
+, body.black .moduletable_menu h3
+, body.black .moduletable h3
+, body.black .hsh-title {
+    color: black;
+    background-color: yellow;
+}
+
+body.black div#footer .padding{
+	padding-top:8px;
+	padding-bottom:2px;
+	background-color: yellow;
+	font-weight:bold;
+	}
+
+body.black div#accessibility-links{color:black}
+
+body.black div#accessibility-links input{
+    border: solid 1px #000;
+    background: yellow;
+    color: #000;
+    font-weight: bold;
+}
+
+body.black #sidebar-left  .moduletable_menu
+, body.black #sidebar-left  .moduletable {
+    border: solid 1px yellow;
+    margin-bottom:20px;
+    margin-top:10px;
+
+}
+
+
+body.black .moduletable_menu
+, body.black .moduletable {
+
+}
+
+body.black ul#mainlevel-nav a.mainlevel-nav {
+color:#000
+}
+
+
+body.black ul#mainlevel-nav a.mainlevel-nav:hover {
+color: yellow;
+    background-color: black;
+    font-weight: bold;
+}
+
+
+body.black div#footer a {
+    color: yellow;
+}
+
+body.black div.componentheading {
+    color: gray;
+    font-weight: bold;
+}
+
+body.black a {
+    color: yellow;
+}
+
+body.black a.readon {
+    font-weight: bold;
+}
+
+body.black a.readon:hover {
+    color: black;
+    background: yellow;
+}
+
+body.black .menu a {
+    color: yellow;
+}
+body.black .menu a:hover
+{
+    color: black;
+    background-color: yellow;
+    font-weight: bold;
+
+}
+body.black .button {
+	border: solid 1px #555;
+	background: yellow;
+	color: black;
+}
+
+body.black div#pathway .padding {margin-left:0;padding-left:0; border-bottom:1px solid yellow; margin-bottom:10px;}
+
+body.black div#top  {background: url(../images/testata_home_contrasto.jpg) top left no-repeat; margin:0; padding:0; height:200px; background-color:#000;}
+
+body.black div#top .padding {background-color:yellow; color:#000; height:38px; padding:0; border-top:1px solid black; border-bottom:1px solid black;}
+
+body.black .articlewrapper {color:yellow;}
+body.black .articlewrapper a{color:yellow;}
+
+
+body.black .notice, body.black .message {
+	background:#000 none repeat scroll 0%;
+	border:1px solid gray;
+	font-size:100%;
+	font-style:normal;
+	margin-left:0px;
+}
+
+body.black #system-message dt { font-weight: bold; }
+body.black #system-message dd { margin: 0;  font-weight: bold; text-indent: 0px;background:gray;padding:0 }
+body.black #system-message dd ul { color: yellow; margin-bottom:0px; list-style: none; padding: 0px; border-top: 3px solid yellow; border-bottom: 3px solid yellow;}
+
+/* System Standard Messages */
+body.black #system-message dt.message { display: none; }
+body.black #system-message dd.message {  }
+body.black #system-message dd.message ul { background: gray}
+
+/* System Error Messages */
+body.black #system-message dt.error { display: none; }
+body.black #system-message dd.error {  }
+body.black #system-message dd.error ul {color: yellow; background:#000; border:2px solid yellow; padding:6px}
+
+/* System Notice Messages */
+body.black #system-message dt.notice { display: none; }
+body.black #system-message dd.notice {  }
+body.black #system-message dd.notice ul {color: yellow; background:#ffff00; border:2px solid yellow; padding:6px}

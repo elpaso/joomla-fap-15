@@ -1,0 +1,265 @@
+/** Define general colors */
+body.white {
+    background: #FFFFFF;
+    color:#000;
+}
+
+body.white h1,body.white h2{
+    color:#003366;
+    background: #FFFFFF;
+    border-bottom: solid 1px #003366;
+}
+
+/** Block styles */
+body.white div#wrapper {
+    background: white;
+    color:#000;
+}
+
+body.white div#menu-top
+, body.white div#footer .padding
+, body.white div#banner
+, body.white .moduletable_menu h3
+, body.white .moduletable h3
+, body.white .hsh-title {
+    color: white;
+    background-color: #003366;
+}
+
+body.white div#footer .padding{
+	padding-top:8px;
+	padding-bottom:2px;
+	background-color: #003366;
+	}
+
+body.white div#menu-top a {
+    border-left: solid 1px #fff;
+    color:#FBF8FB;
+    background: transparent;
+}
+
+body.white .menu a:hover
+{
+    color: white;
+    background-color: #003366;
+    font-weight: bold;
+
+}
+
+body.white a:visited{
+    color: #002B57;
+}
+
+
+body.white div#menu-top a:hover {
+    background-color: white;
+    font-weight: bold;
+    color: #003366
+}
+
+
+body.white div#accessibility-links {
+    color: #fff;
+}
+
+body.white div#accessibility-links input{
+    border: solid 1px #003366;
+    background: white;
+    color: #002B57;
+    font-weight: bold;
+}
+
+
+body.white #sidebar-left .moduletable_menu
+, body.white #sidebar-left .moduletable {
+    border: solid 1px #003366;
+    margin-bottom:20px;
+    margin-top:10px;
+
+}
+
+body.white #menu-top .moduletable {
+    border: solid 1px #003366;
+}
+
+body.white div#footer a {
+    color: white;
+}
+
+body.white div.componentheading {
+    color: gray;
+    font-weight: bold;
+}
+
+body.white a.readon {
+    color: #003366;
+    font-weight: bold;
+}
+
+body.white a.readon:hover
+, body.white a.contentpagetitle:hover {
+    background: #903;
+    color: white;
+}
+
+body.white .button {
+	border: solid 1px #003366;
+	background: #003366;
+        font-weight: bold;
+	color: white;
+}
+
+body.white .sectiontableentry1 {
+	background: #EEF7DF;
+}
+
+body.white div.pagenav {
+	background: #EEF2FF;
+	border: solid 1px #072A9C;
+}
+
+
+/* tags */
+
+body.white .poll-title {
+	color: black;
+	background: #EBEAD6;
+	font-weight: bold;
+	margin:0;
+}
+
+body.white div.tool-tip {
+	background: #FFF98C;
+	color: black;
+	border: solid 2px gray;
+	padding: 1em;
+}
+
+
+body.white .highlight {
+	background: yellow;
+}
+
+body.white .pageslinks
+, body.white .pagescounter  {
+	background:#F4F7EF none repeat scroll 0%;
+}
+
+body.white .pageslinks {
+	border-top:1px solid #BBBBBB;
+}
+
+body.white .pagescounter  {
+	border-bottom:1px solid #BBBBBB;
+}
+
+body.white .notice, body.white .message {
+	background:#000 none repeat scroll 0%;
+	border:1px solid gray;
+	font-size:100%;
+	font-style:normal;
+	margin-left:0px;
+}
+
+body.white form.editor a:hover
+,body.white .mceWrapper a:hover {
+	background:inherit;
+	color: black;
+}
+
+body.white div#pathway .padding {margin-left:0;padding-left:0;padding-right:0; border-bottom:1px solid #003366; margin-bottom:10px;}
+
+body.white div#top  {  background: url(../images/testata_home.jpg) top left no-repeat;;margin:0;padding:0;height:200px;background-color:#133495;}
+body.white div#top .padding {background-color:#003366; height:38px;padding:0;border-bottom:1px solid #6f91c2}
+
+body.white #system-message dt { font-weight: bold; }
+body.white #system-message dd { margin: 0;  font-weight: bold; text-indent: 0px;background:gray;padding:0 }
+body.white #system-message dd ul { color: red; margin-bottom: 0px; list-style: none; padding: 0px; border-top: 3px solid black; border-bottom: 3px solid black;}
+
+/* System Standard Messages */
+body.white #system-message dt.message { display: none; }
+body.white #system-message dd.message {  }
+body.white #system-message dd.message ul { background: gray}
+
+/* System Error Messages */
+body.white #system-message dt.error { display: none; }
+body.white #system-message dd.error {  }
+body.white #system-message dd.error ul {color: white; background:#036; border: 2px solid red;padding:6px}
+
+/* System Notice Messages */
+body.white #system-message dt.notice { display: none; }
+body.white #system-message dd.notice {  }
+body.white #system-message dd.notice ul {color: white; background:#036; border: 2px solid red;padding:6px}
+
+
+/* home PSO */
+
+#PSO_img_home{
+	margin:0px;
+	padding:0px;
+	
+	background: url(/images/portale_hsh/home_pso.jpg);
+	background-repeat:no-repeat;
+	height:480px;
+	background-position:left;
+	}
+
+#PSO_link{
+
+	float:right;
+	border: 1px solid #036;
+	background-color:#E6EFF9;
+	font-weight:bold;
+	color:#FFF;
+	text-align:center;
+	}
+	
+#PSO_link_SO{
+	background-color:#036;
+	padding:10px;
+	border: 1px solid #fff;
+	margin-right:10px;
+	margin-bottom:5px;
+	margin-top:10px;
+	margin-left:10px;
+	}
+	
+#PSO_link_LN{
+	background-color:#036;
+	padding:10px;
+	border: 1px solid #fff;
+	margin-right:10px;
+	margin-bottom:5px;
+	margin-top:5px;
+	margin-left:10px;
+	}
+	
+#PSO_link_SR{
+	background-color:#036;
+	padding:10px;
+	border: 1px solid #fff;
+	margin-right:10px;
+	margin-bottom:5px;
+	margin-top:5px;
+	margin-left:10px;
+	}
+	
+#PSO_link_RN{
+	background-color:#036;
+	padding:10px;
+	border: 1px solid #fff;
+	margin-right:10px;
+	margin-bottom:10px;
+	margin-top:5px;
+	margin-left:10px;
+	}
+		
+.nascosto
+	{
+	position:absolute;
+ 	left:0px;
+ 	top:-500px;
+ 	width:1px;
+ 	height:1px;
+ 	overflow:hidden;
+	}

@@ -1,0 +1,153 @@
+/** Main blocks and floats */
+
+body#mainbody {
+    text-align: center;
+    margin: 0;
+    /* to avoid margins */
+  }
+
+
+body div#wrapper {
+    min-width: 760px;
+    max-width: 960px;
+    width: auto !important;
+    width: 960px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    text-align: left;
+  }
+
+
+.hidden {
+    font-size:0.1em;
+    height:1px;
+    line-height:0.1em;
+    margin:0pt;
+    padding:0pt;
+    position:absolute;
+    top:-10000px;
+    width:1px;
+  }
+
+.clr {
+    clear: both;
+  }
+
+div.padding {
+    padding: 0.5em;
+  }
+
+
+div#sidebar-left {
+    float: left;
+    width: 23%;
+    overflow: hidden;
+  }
+
+div.moduletable-banner {
+  overflow: hidden;
+}
+
+div.moduletable-banner a img{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#sidebar-left div.padding {
+    padding-left: 0;
+  }
+
+
+div#sidebar-right div.padding {
+    padding-right: 0;
+  }
+
+
+div#menu-top div.padding {
+    padding-left: 0;
+  }
+
+
+div#sidebar-right {
+    float: right;
+    width: 23%;
+    overflow: hidden;
+  }
+
+
+div#main-1 {
+    overflow:hidden;
+    width:100%;
+  }
+
+
+div#main-2 {
+    float:left;
+    overflow:hidden;
+    width:77%;
+  }
+
+
+div#main-3 {
+    float: left;
+    width: 54%;
+    overflow: hidden;
+  }
+
+
+div#user12
+, div.userfull {
+    float: left;
+    width: 100%;
+  }
+
+div.column_left {
+    float: left;
+    width: 49%;
+  }
+
+div.column_right {
+    float: right;
+    width: 49%;
+  }
+
+
+div#accessibility-links {
+    text-align:right;
+  }
+
+div#accessibility-links.accessibility-icons {
+    float:right;
+  }
+
+div#menu-top {
+    width: 100%;
+  }
+
+div#banner .padding {
+    padding:0;
+    text-align:center;
+  }
+
+
+div.article_column {
+    float: left;
+    overflow: hidden;
+  }
+
+
+div.column_separator .contentpaneopen {
+    padding-left: 4%;
+  }
+
+
+div.blog {
+    width: 100%;
+  }
+
+iframe {
+	text-align:left;
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+<install version="1.5" type="template" method="upgrade">
+	<name>accessible</name>
+	<version>slip</version>
+	<creationDate>2011-03-30</creationDate>
+	<author>itopen</author>
+	<authorEmail>info@itopen.it</authorEmail>
+	<authorUrl>http://www.itopen.it</authorUrl>
+	<copyright>Copyright 2008 - itopen.it</copyright>
+	<license>AGPL: Affero GPL</license>
+	<description>Accessible Template XHTML Strict</description>
+	<files>
+
+		<filename>params.ini</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>js/skin_alter.js</filename>
+		<filename>html/com_search/search/default.php</filename>
+		<filename>html/com_search/search/default_form.php</filename>
+		<filename>html/com_search/search/default_results.php</filename>
+		<filename>html/mod_poll/default.php</filename>
+		<filename>html/mod_newsflash/_item.php</filename>
+		<filename>html/com_contact/category/default_items.php</filename>
+		<filename>html/com_contact/category/default.php</filename>
+		<filename>html/com_contact/contact/default_address.php</filename>
+		<filename>html/com_contact/contact/default.php</filename>
+		<filename>html/com_contact/contact/default_form.php</filename>
+		<filename>html/mod_whosonline/default.php</filename>
+		<filename>html/mod_random_image/default.php</filename>
+		<filename>html/mod_search/default.php</filename>
+		<filename>html/com_content/category/default_items.php</filename>
+		<filename>html/com_content/category/blog_item.php</filename>
+		<filename>html/com_content/category/default.php</filename>
+		<filename>html/com_content/category/blog.php</filename>
+		<filename>html/com_content/section/blog_item.php</filename>
+		<filename>html/com_content/section/default.php</filename>
+		<filename>html/com_content/section/blog.php</filename>
+		<filename>html/com_content/article/form.php</filename>
+		<filename>html/com_content/article/default.php</filename>
+		<filename>html/com_content/overrides/default_item.php</filename>
+		<filename>html/com_content/overrides/blog_item.php</filename>
+		<filename>html/com_content/overrides/blog.php</filename>
+		<filename>html/com_content/frontpage/default_item.php</filename>
+		<filename>html/com_content/frontpage/default.php</filename>
+		<filename>html/mod_mainmenu/accesskey_helper.php</filename>
+		<filename>html/mod_mainmenu/default.php</filename>
+		<filename>html/com_user/login/index.html</filename>
+		<filename>html/com_user/login/default_login.php</filename>
+		<filename>html/com_user/login/default.php</filename>
+		<filename>html/com_user/login/default_logout.php</filename>
+		<filename>html/com_user/index.html</filename>
+		<filename>html/com_user/register/index.html</filename>
+		<filename>html/com_user/register/default_message.php</filename>
+		<filename>html/com_user/register/default.php</filename>
+		<filename>html/com_user/user/index.html</filename>
+		<filename>html/com_user/user/form.php</filename>
+		<filename>html/com_user/user/default.php</filename>
+		<filename>html/com_user/reset/index.html</filename>
+		<filename>html/com_user/reset/complete.php</filename>
+		<filename>html/com_user/reset/confirm.php</filename>
+		<filename>html/com_user/reset/default.php</filename>
+		<filename>html/com_user/remind/index.html</filename>
+		<filename>html/com_user/remind/default_message.php</filename>
+		<filename>html/com_user/remind/default.php</filename>
+		<filename>html/mod_login/default.php</filename>
+		<filename>html/mod_banners/xhtml_helper.php</filename>
+		<filename>html/mod_banners/default.php</filename>
+		<filename>css/typography.css</filename>
+        <filename>css/general.css</filename>
+		<filename>css/index.html</filename>
+		<filename>css/editor_content.css</filename>
+		<filename>css/template_css.css</filename>
+		<filename>css/msie6.css</filename>
+		<filename>css/layout.css</filename>
+		<filename>css/skin_black.css</filename>
+        	<filename>css/skin_liquid.css</filename>
+	        <filename>css/custom_theme.css</filename>
+		<filename>css/skin_white.css</filename>
+		<filename>images/index.html</filename>
+		<filename>images/emailButton.png</filename>
+        <filename>images/icon-error.gif</filename>
+		<filename>images/pdf_button.png</filename>
+		<filename>images/spacer.png</filename>
+		<filename>images/printButton.png</filename>
+        <filename>images/textincrease.gif</filename>
+        <filename>images/textdecrease.gif</filename>
+        <filename>images/textreset.gif</filename>
+        <filename>images/contrasthigh.gif</filename>
+        <filename>images/contrastnormal.gif</filename>
+        <filename>images/layouttext.gif</filename>
+        <filename>images/layout.gif</filename>
+        <filename>images/layoutnormal.gif</filename>
+        <filename>template_thumbnail.png</filename>
+		<filename>index.php</filename>
+		<filename>joomla_fap_tpl_positions.png</filename>
+		<filename>joomla_accessible_template.png</filename>
+    </files>
+    <params>
+            <param name="default_skin" type="radio" default="white" label="Choose default skin">
+                <option value="white">White (Default)</option>
+                <option value="black">Black (High Contrast)</option>
+            </param>
+            <param name="liquid_variant" type="radio" default="yes" label="Display accessibility button for liquid layout">
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </param>
+            <param name="accessibility_icons" type="radio" default="yes" label="Display accessibility icons instead of buttons">
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </param>
+    </params>
+	<languages>
+		<!--<language tag="en-GB">en-GB.tpl_accessible.ini</language>-->
+        <language tag="it-IT">it-IT.tpl_accessible.ini</language>
+	</languages>
+	<administration>
+		<languages folder="admin">
+		</languages>
+	</administration>
+	<positions>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>bottom</position>
+        <position>center</position>
+        <position>footer</position>
+		<position>breadcrumb</position>
+		<position>banner</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>debug</position>
+		<position>syndicate</position>
+	</positions>
+
+</install>

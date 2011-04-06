@@ -11,7 +11,7 @@ Un template conforme e un componente per le accesskey
 
 AUTORE
 ------
-(C) 2008 Alessandro Pasotti
+(C) 2008-2011 Alessandro Pasotti
 http://www.itopen.it
 
 CONTRIBUTI DI (in ordine cronologico)
@@ -27,16 +27,6 @@ Affero GPL V.3
 http://www.gnu.org/licenses/agpl-3.0.txt
 http://www.fsf.org/licensing/licenses/agpl-3.0.html
 
-!!!!!!!!!!!!!!!!!!
-FURBETTI ATTENZIONE: la licenza è una cosa seria, ogni violazione verrà penalmente perseguita!!
-!!!!!!!!!!!!!!!!!
-
-BUG NOTI
---------------------------------
-Il sistema di read more di Joomla permette di inserire il tag <hr id="system-readmore"/> in qualsiasi posizione anche all'interno di tag P o DIV, quindi verrà prodotto codice non correttamente annidato.
-
-L'unica soluzione a questo problema è per il momento utilizzare il plugin
-http://develop.joomlashow.it/english/plugins/html-purifier.html
 
 BUG NUOVI
 --------------------------------
@@ -54,82 +44,3 @@ INSTALLAZIONE
 -------------------------------
 Leggete il file INSTALL nella cartella corrente.
 
-!!! TECH !!!
-
-Informazioni per gli sviluppatori
-
-!!! TECH !!!
-
-MODIFICARE IL CODICE
----------------------
-Ogni sviluppatore deve marcare le modifiche al codice con la propria sigla di tre lettere maiuscole, per es.:
-
-// ABP: modificato questo e quello
-
-Sarebbe anche utile inserire le modifiche anche in un file CHANGELOG ma il log dell'SVN contiene comunque informazioni di base su quanto modificato.
-
-
-INSTALLARE UN SISTEMA DI SVILUPPO
----------------------------------
-
-Ipotizziamo di avere Joomla 1.5 SVN in
-
-/var/www/j15svn/trunk
-
-8<---8<---8<---8<---8<---8<---8<---8<---
-# ci spostiamo nella cartella
-$ cd /var/www/j15svn
-$ svn checkout --username VOSTRONOMEUTENTE http://joomlacode.org/svn/joomlafap1_5
-# conviene mantenere in una cartella separata il template in sviluppo e linkare con
-ln -s `pwd`/joomlafap1_5/templates/accessible/ `pwd`/trunk/templates/accessible
-ln -s `pwd`/joomlafap1_5/templates/accessible/language/it-IT.tpl_accessible.ini `pwd`/trunk/language/it-IT/it-IT.tpl_accessible.ini
-8<---8<---8<---8<---8<---8<---8<---8<---
-
-A questo punto occorre applicare solo la patch più recente tra quelle contenute in  joomlafap1_5/corepatches (meglio applicarle a mano, sono solo un paio di file).
-
-In alternativa all'applicazione delle patch è possibile sovrascrivere i file modificati presenti nella cartella corepatches.
-
-
-PREPARARE IL FILE DIFF PER LE PATCH AL CORE
--------------------------------------------
-dalla cartella development si può usare lo script che segue (anche disponibile in questa
-cartella come make_diff.sh):
-
-8<---8<---8<---8<---8<---8<---8<---8<---
-# Cartella base di joomla 1.5 svn
-WORKDIR=/var/www/j15/trunk
-
-# Cartella base del template accessibile del progetto FAP 1.5
-FAPDIR=/var/www/joomlafap1_5
-
-# Data
-TS=`date +%Y-%m-%d`
-
-# cd to trunk
-cd $WORKDIR
-
-# Crea il file diff e lo salva
-svn diff --diff-cmd /usr/bin/diff -x  "-u -b -r" > $FAPDIR/development/joomla_fap_15_$TS.diff
-
-# Aggiunge il diff a svn (ricordarsi il commit)
-svn add $FAPDIR/development/joomla_fap_15_$TS.diff
-8<---8<---8<---8<---8<---8<---8<---8<---
-
-
-APPLICARE LE PATCH
--------------------------------------------
-Le patch vanno applicate a partire dalla cartella base, quindi nel nostro esempio è /var/www/j15/trunk
-
-Nell'esempio che segue, sostituire la data del file diff con l'ultimo diponibile
-
-8<---8<---8<---8<---8<---8<---8<---8<---
-# Cartella base di joomla 1.5 svn
-WORKDIR=/var/www/j15/trunk
-
-# Cartella base del template accessibile del progetto FAP 1.5
-FAPDIR=/var/www/joomlafap1_5
-
-cd $WORKDIR
-patch -p0 < $FAPDIR/joomla_fap_15_2008-03-13.diff
-
-8<---8<---8<---8<---8<---8<---8<---8<---
