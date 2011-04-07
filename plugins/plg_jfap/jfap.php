@@ -31,12 +31,11 @@ class  plgSystemJFap extends JPlugin
         #$style_replace = ''
 
         # Remove style from span
-        $style_regexp = '@<span([^>]*?)\sstyle=["\'][^"\']*["\']([^>]*?)>@is';
-        $style_replace = '<span\1\2>';
+        $style_regexp = '@<span([^>]*?)\sstyle=(["\']).*?\2([^>]*?)>@is';
+        $style_replace = '<span\1\3>';
         $body = preg_replace(array('/target=[\'"][^\'"]+/', $style_regexp, '/(<meta name="generator" content=")([^"]+)"/'
 ), array('onclick="window.open(this.href);return false;', $style_replace, '\1\2 - Versione FAP"'), $body);
         JResponse::setBody($body);
     }
-
 
 }
