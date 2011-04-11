@@ -8,7 +8,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 	});
 </script>
 
-<form action="<?php echo JRoute::_('index.php?option=com_user#content'); ?>" method="post" id="josForm" name="josForm" class="form-validate user">
+<form action="<?php echo JRoute::_('index.php?option=com_user#content'); ?>" method="post" id="josForm" class="form-validate user">
 	<h2 class="componentheading"><?php echo JText::_('Registration'); ?></h2>
 	<?php if(isset($this->message)) :
 		$this->display('message');
@@ -38,9 +38,11 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 			<input type="password" id="password2" name="password2" value="" class="inputbox required validate-passverify" />
 		</div>
 	</fieldset>
-	<button class="button validate" type="submit"><?php echo JText::_('Register'); ?></button>
-	<input type="hidden" name="task" value="register_save" />
-	<input type="hidden" name="id" value="0" />
-	<input type="hidden" name="gid" value="0" />
-	<?php echo JHTML::_( 'form.token' ); ?>
+	<div>
+      <button class="button validate" type="submit"><?php echo JText::_('Register'); ?></button>
+      <input type="hidden" name="task" value="register_save" />
+      <input type="hidden" name="id" value="0" />
+      <input type="hidden" name="gid" value="0" />
+      <?php echo JHTML::_( 'form.token' ); ?>
+	</div>
 </form>

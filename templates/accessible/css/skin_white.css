@@ -77,7 +77,7 @@ body.white a.readon:hover
     color: white;
 }
 
-body.white .button {
+body.white .button, body.white button {
 	border: solid 1px #0A2469;
 	background: #903;
 	color: white;

@@ -73,14 +73,13 @@
 		<filename>css/msie6.css</filename>
 		<filename>css/layout.css</filename>
 		<filename>css/skin_black.css</filename>
-        	<filename>css/skin_liquid.css</filename>
-	        <filename>css/custom_theme.css</filename>
+        <filename>css/skin_liquid.css</filename>
+	    <filename>css/custom_theme.css</filename>
 		<filename>css/skin_white.css</filename>
 		<filename>images/index.html</filename>
 		<filename>images/emailButton.png</filename>
         <filename>images/icon-error.gif</filename>
 		<filename>images/pdf_button.png</filename>
-		<filename>images/spacer.png</filename>
 		<filename>images/printButton.png</filename>
         <filename>images/textincrease.gif</filename>
         <filename>images/textdecrease.gif</filename>
@@ -89,7 +88,15 @@
         <filename>images/contrastnormal.gif</filename>
         <filename>images/layouttext.gif</filename>
         <filename>images/layout.gif</filename>
+        <filename>images/arrow.png</filename>
         <filename>images/layoutnormal.gif</filename>
+
+        <filename>images/j_button2_blank.png</filename>
+        <filename>images/j_button2_image.png</filename>
+        <filename>images/j_button2_left.png</filename>
+        <filename>images/j_button2_pagebreak.png</filename>
+        <filename>images/j_button2_readmore.png</filename>
+
         <filename>template_thumbnail.png</filename>
 		<filename>index.php</filename>
 		<filename>joomla_fap_tpl_positions.png</filename>

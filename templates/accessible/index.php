@@ -162,7 +162,7 @@ if($this->countModules('left or inset or user4')) {
             </div>
         </div>
         <?php } ?>
-        <div id="main-<?php print $cols ;?>">
+        <div id="main-<?php print $cols ;?>" class="maincomponent">
           <?php if ($this->countModules('center')){ ?>
           <div id="center-module">
               <div class="padding">

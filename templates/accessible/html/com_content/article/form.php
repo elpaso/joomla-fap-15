@@ -71,12 +71,12 @@ function submitbutton(pressbutton) {
 }
 //-->
 </script>
-<form action="<?php echo $this->action ?>" method="post" id="adminForm" onSubmit="setgood();" class="editor">
+<form action="<?php echo htmlentities($this->action) ?>" method="post" id="adminForm" onSubmit="setgood();" class="editor">
 <fieldset>
 <legend><?php echo JText::_('Editor'); ?></legend>
 
 		<div>
-			<label for="title">
+			<label for="title" class="block">
 				<?php echo JText::_( 'Title' ); ?>:
 			</label>
 			<input class="inputbox" type="text" id="title" name="title" size="50" maxlength="100" value="<?php echo $this->escape($this->article->title); ?>" />
@@ -89,7 +89,7 @@ function submitbutton(pressbutton) {
 				<?php echo JText::_('Cancel') ?>
 			</button>
 		</div>
-		<div class="wrap">&nbsp;</div>
+
 
 <?php
 echo $this->editor->display('text', $this->article->text, '100%', '400', '70', '15');
@@ -99,27 +99,23 @@ echo $this->editor->display('text', $this->article->text, '100%', '400', '70', '
 <legend><?php echo JText::_('Publishing'); ?></legend>
 
 	<div>
-		<label for="sectionid">
+		<label for="sectionid" class="block">
 			<?php echo JText::_( 'Section' ); ?>:
 		</label>
-
 		<?php echo $this->lists['sectionid']; ?>
 	</div>
-	<div class="wrap">&nbsp;</div>
 
 	<div>
-		<label for="catid">
+		<label for="catid" class="block">
 			<?php echo JText::_( 'Category' ); ?>:
 		</label>
-
 		<?php echo $this->lists['catid']; ?>
 	</div>
-	<div class="wrap">&nbsp;</div>
 
 <?php if ($this->user->authorize('com_content', 'publish', 'content', 'all')) : ?>
 
 	<div class="radio">
-		<label for="state" >
+		<label for="state" class="block">
 			<span><?php echo JText::_( 'Published' ); ?>:</span>
 		</label>
 
@@ -130,53 +126,51 @@ echo $this->editor->display('text', $this->article->text, '100%', '400', '70', '
 <?php endif; ?>
 
 	<div class="radio">
-		<label for="frontpage">
+		<label for="frontpage" class="block">
 			<span><?php echo JText::_( 'Show on Front Page' ); ?>:</span>
 		</label>
-
 		<?php echo $this->lists['frontpage']; ?>
 	</div>
-	<div class="wrap">&nbsp;</div>
 
 	<div>
-		<label for="created_by_alias">
+		<label for="created_by_alias" class="block">
 			<?php echo JText::_( 'Author Alias' ); ?>:
 		</label>
 
 		<input type="text" id="created_by_alias" name="created_by_alias" size="50" maxlength="100" value="<?php echo $this->article->created_by_alias; ?>" class="inputbox" />
 
 	</div>
-	<div class="wrap">&nbsp;</div>
+
 	<div>
-		<label for="publish_up">
+		<label for="publish_up" class="block">
 			<?php echo JText::_( 'Start Publishing' ); ?>:
 		</label>
         <?php echo JHTML::_('calendar', $this->article->publish_up, 'publish_up', 'publish_up', '%Y-%m-%d %H:%M:%S', array('class'=>'inputbox', 'size'=>'25',  'maxlength'=>'19')); ?>
 	</div>
-	<div class="wrap">&nbsp;</div>
+
 	<div>
-		<label for="publish_down">
+		<label for="publish_down" class="block">
 			<?php echo JText::_( 'Finish Publishing' ); ?>:
 		</label>
         <?php echo JHTML::_('calendar', $this->article->publish_down, 'publish_down', 'publish_down', '%Y-%m-%d %H:%M:%S', array('class'=>'inputbox', 'size'=>'25',  'maxlength'=>'19')); ?>
 	</div>
-	<div class="wrap">&nbsp;</div>
+
 	<div>
-		<label for="access">
+		<label for="access" class="block">
 			<?php echo JText::_( 'Access Level' ); ?>:
 		</label>
 
 		<?php echo $this->lists['access']; ?>
 	</div>
-	<div class="wrap">&nbsp;</div>
+
 	<div>
-		<label for="ordering">
+		<label for="ordering" class="block">
 			<?php echo JText::_( 'Ordering' ); ?>:
 		</label>
 
 		<?php echo $this->lists['ordering']; ?>
 	</div>
-	<div class="wrap">&nbsp;</div>
+
 
 </fieldset>
 
@@ -184,13 +178,13 @@ echo $this->editor->display('text', $this->article->text, '100%', '400', '70', '
 <legend><?php echo JText::_('Metadata'); ?></legend>
 
 
-		<label for="metadesc">
+		<label for="metadesc" class="block">
 			<?php echo JText::_( 'Description' ); ?>:
 		</label>
 
 		<textarea rows="5" cols="50" style="width:500px; height:120px" class="inputbox" id="metadesc" name="metadesc"><?php echo str_replace('&','&amp;',$this->article->metadesc); ?></textarea>
 
-		<label for="metakey">
+		<label for="metakey" class="block">
 			<?php echo JText::_( 'Keywords' ); ?>:
 		</label>
 
