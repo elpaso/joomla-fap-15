@@ -25,11 +25,18 @@
             <?php echo JHTML::_('grid.sort',  'Item Title', 'a.title', $this->lists['order_Dir'], $this->lists['order'] ); ?>
         </th>
         <?php endif; ?>
-        <?php if ($this->params->get('show_date')) : ?>
+
+        <?php if ($this->params->get('show_date') || $this->params->get('show_create_date')) : ?>
         <th scope="col" class="sectiontableheader<?php echo $this->params->get( 'pageclass_sfx' ); ?>" style="width:25%">
             <?php echo JHTML::_('grid.sort',  'Date', 'a.created', $this->lists['order_Dir'], $this->lists['order'] ); ?>
         </th>
         <?php endif; ?>
+        <?php if ($this->params->get('show_modify_date')) : ?>
+        <th scope="col" class="sectiontableheader<?php echo $this->params->get( 'pageclass_sfx' ); ?>" style="width:25%">
+            <?php echo JHTML::_('grid.sort',  'Last modified', 'a.modified', $this->lists['order_Dir'], $this->lists['order'] ); ?>
+        </th>
+        <?php endif; ?>
+
         <?php if ($this->params->get('show_author')) : ?>
         <th scope="col" class="sectiontableheader<?php echo $this->params->get( 'pageclass_sfx' ); ?>"  style="width:20%">
             <?php echo JHTML::_('grid.sort',  'Author', 'author', $this->lists['order_Dir'], $this->lists['order'] ); ?>
@@ -66,9 +73,14 @@
         </td>
         <?php endif; ?>
         <?php endif; ?>
-        <?php if ($this->params->get('show_date')) : ?>
+        <?php if ($this->params->get('show_date') || $this->params->get('show_create_date')) : ?>
         <td>
           <?php echo $item->created; ?>
+        </td>
+        <?php endif; ?>
+        <?php if ($this->params->get('show_modify_date')) : ?>
+        <td>
+          <?php echo $item->modified; ?>
         </td>
         <?php endif; ?>
         <?php if ($this->params->get('show_author')) : ?>
